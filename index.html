@@ -13,6 +13,19 @@ body {
     color: #ffffff;
 }
 
+
+/* Ultra smooth zoom in & out */
+@keyframes smoothZoom {
+    0% {
+        background-size: 110%;
+    }
+    50% {
+        background-size: 120%;
+    }
+    100% {
+        background-size: 110%;
+    }
+}
 header {
     background-image: url("header-bg.jpg");
     background-size: cover;
@@ -21,7 +34,10 @@ header {
     text-align: center;
     color: white;
 }
-
+header h1 {
+    font-size: 48px;
+    text-shadow: 0 0 10px #4caf50, 0 0 20px #2e7d32;
+}
 nav {
     background: #111;
     padding: 12px;
